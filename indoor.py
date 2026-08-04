@@ -316,6 +316,7 @@ name.capitalize() - Capitalizes the first character of the string and converts t
 name.swapcase() - Swaps the case of each character in the string, converting uppercase to lowercase and vice versa.
 """
 
-name = "  hussein mohammed  "
-print(name.strip())  # Output: "hussein mohammed"
-print(name.title().strip())  # Output: "Hussein Mohammed"
+name = "    hussein mohammed     "
+name = name.strip().title()
+first, last = name.split(" ")
+print(first)

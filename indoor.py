@@ -285,7 +285,37 @@ for word in ["hello", "world", "python"]:
 name =input("what is your name? ")
 print(f"Hello, {name}!")
 
-'''''''''
+
 
 input_number = input("Please enter a number: ")
 print(f"You entered: {int(input_number) + 10}")  # Convert the string to an integer before adding 10
+'''''''''
+# String Methods
+# Strings in Python come with a variety of built-in methods that allow you to manipulate and analyze them. 
+# Here are some commonly used string methods: 
+
+"""
+name.lower() - Converts all characters in the string to lowercase.
+name.upper() - Converts all characters in the string to uppercase.
+name.title() - Converts the first character of each word to uppercase and the rest to lowercase.
+name.strip() - Removes any leading and trailing whitespace from the string.
+name.replace(old, new) - Replaces occurrences of a specified substring (old) with another substring (new).
+name.split(separator) - Splits the string into a list of substrings based on the specified separator. If no separator is provided, it splits on whitespace by default.
+name.find(substring) - Returns the index of the first occurrence of the specified substring. Returns -1 if the substring is not found.
+name.count(substring) - Returns the number of occurrences of the specified substring in the string. 
+name.startswith(prefix) - Returns True if the string starts with the specified prefix, otherwise returns False.
+name.endswith(suffix) - Returns True if the string ends with the specified suffix, otherwise returns False.
+name.isdigit() - Returns True if all characters in the string are digits, otherwise returns False. 
+name.isalpha() - Returns True if all characters in the string are alphabetic, otherwise returns False.
+name.isalnum() - Returns True if all characters in the string are alphanumeric (letters and numbers), otherwise returns False.
+name.join(iterable) - Joins the elements of an iterable (like a list or tuple) into a single string, with the string acting as a separator between elements.    
+name.format() - Allows you to format strings by inserting values into placeholders defined by curly braces {}. You can specify the order of the values and apply formatting options.    
+name.replace(old, new) - Replaces occurrences of a specified substring (old) with another substring (new). 
+name.splitlines() - Splits the string into a list of lines, breaking at line boundaries.
+name.capitalize() - Capitalizes the first character of the string and converts the rest to lowercase.
+name.swapcase() - Swaps the case of each character in the string, converting uppercase to lowercase and vice versa.
+"""
+
+name = "  hussein mohammed  "
+print(name.strip())  # Output: "hussein mohammed"
+print(name.title().strip())  # Output: "Hussein Mohammed"

@@ -286,3 +286,6 @@ name =input("what is your name? ")
 print(f"Hello, {name}!")
 
 '''''''''
+
+input_number = input("Please enter a number: ")
+print(f"You entered: {int(input_number) + 10}")  # Convert the string to an integer before adding 10

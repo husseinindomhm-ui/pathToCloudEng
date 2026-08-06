@@ -46,27 +46,47 @@ if  x % 2 == 0:
 else:
     print("ODD")
 """""
-
+"""""
 def main():
     x = int(input("x"))
     if is_even(x):
         print("even")
     else:
         print("odd")
-        
+      
+      """""
+"""""  
 def is_even(x):
-    """""
+    
     if x % 2 == 0:
         return True
     else:
         return False
-    """""
     # improving
     """""
+    #improving 01
+"""""
     return True if x % 2 == 0 else False
     """""
     # improving 01
+"""""
     return x % 2 == 0
 main()
+
+x = int(input("What is x"))
+
+"""""
+# Match Statements - 
+"""""
+name = input('what is your name') 
+match name:
+    case "Harry" | "hermione" | "Ron":
+        print("G")
+    case "Draco":
+        print("S")
+    case "Luna":
+        print("H")
+"""""
+
 
 

@@ -1,0 +1,20 @@
+import pytest
+from calc import square
+
+def test_positive():
+    assert square(2) == 4 # assertion
+    assert square(3) == 9
+
+
+def test_negative():
+    assert square(-4) == -16
+    assert square(-8) == 64
+
+
+def test_zero():
+    assert square(0) == 0
+    
+def test_str():
+    with pytest.raises(TypeError): # exception error
+        square("cat")
+

@@ -1,0 +1,38 @@
+# re symbols are: ^ (start of the string), $ (end of the string), 
+# . (matches any character) matches any character other than newline
+# * (matches 0 or more times) 
+# + (matches 1 or more times)
+# ? (0 or 1 repetitons)
+# {m} (matches m repetitions)
+# {m,n} (matches m to n repetitions)
+# ^ (start of the string), matches the beginning of the string
+# $ (end of the string), matches the end of the string or just before the newline at the end of the string
+# [] set of characters (everything inside the bracket) 
+# [^] complementing a set of characters
+
+# \d decimal digit
+# \D non-decimal digit
+# \s whitespace character
+# \S non-whitespace character
+# \w word character
+# \W non-word character
+
+
+
+
+breaking down the below regex:
+r"^.+@.+\.edu$"
+
+This regular expression (also known as a regex or regexp) is used to match strings that are 
+either empty or match the pattern username@organization.edu. 
+
+Here's how it works:
+^: This asserts the start of a line.
+.+: This matches one or more of any character (except a newline).
+@: This matches the @ symbol.
+.+: This matches one or more of any character (except a newline).
+\.edu: This matches the .edu domain extension.
+$: This asserts the end of a line.
+
+So, this regular expression matches any string that ends with @something.edu, with any 
+characters in between. It's used to check if a given string is a valid email address.
